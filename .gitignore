@@ -1,0 +1,31 @@
+# Secrets
+.env
+
+# Generated data (reproducible via create_dataset.py)
+data/processed/
+data/raw/
+
+# Model weights (large files — download via Colab)
+outputs/model/
+
+# Keep evaluation results
+!outputs/results/evaluation.csv
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Zip artifacts
+*.zip
+llm-finetuning.zip
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,39 @@
+model:
+  name: "ministral/Ministral-3b-instruct"
+  max_length: 256
+
+qlora:
+  r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  target_modules:
+    - q_proj
+    - v_proj
+    - k_proj
+    - o_proj
+
+training:
+  num_epochs: 3
+  batch_size: 2
+  gradient_accumulation: 4
+  learning_rate: 0.0002
+  warmup_ratio: 0.03
+  lr_scheduler: cosine
+  save_steps: 50
+  eval_steps: 50
+  logging_steps: 10
+
+output:
+  dir: "./outputs/model"
+
+# --- Switch to Mistral 7B (Colab Pro / A100, needs HF token) ---
+# model:
+#   name: "mistralai/Mistral-7B-v0.1"
+#   max_length: 512
+# qlora:
+#   r: 16
+#   lora_alpha: 32
+#   target_modules: [q_proj, v_proj, k_proj, o_proj]
+# training:
+#   batch_size: 4
+#   gradient_accumulation: 4
