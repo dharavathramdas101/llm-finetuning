@@ -2,7 +2,7 @@
 
 Fine-tune `ministral/Ministral-3b-instruct` on a customer support dataset using **QLoRA (4-bit quantization)**. Demonstrates measurable before/after improvement with a live Streamlit demo.
 
-> Portfolio project targeting **18-28 LPA** roles requiring LLM fine-tuning skills (LoRA/QLoRA, domain adaptation, instruction tuning, before/after evaluation).
+> LLM fine-tuning skills (LoRA/QLoRA, domain adaptation, instruction tuning, before/after evaluation).
 
 ---
 
